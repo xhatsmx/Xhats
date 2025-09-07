@@ -97,11 +97,11 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const hats = [
-    { id:1, name:"Dandy Lost Hills", brand:"Dandy", price:2599, images:["FLost_Dandy-1633808640.jpeg","Dandy/DSC06449.webp"] },
-    { id:2, name:"Dandy project 001", brand:"Dandy", price:2599, images:["Dandy/6837A50F-7B77-474F-8F33-F5EFFEAFD274.webp","Fotos X hats/Dandy/Dandy-Project-001-What-Would-Dandy-Do-4.webp","Fotos X hats/Dandy/Dandy-Project-001-What-Would-Dandy-Do-3.webp"] },
-    { id:3, name:"31 Hats Aniversario", brand:"31 Hats", price:1599, images:["Fotos X hats/31/CapturadePantalla2025-01-24ala_s_12.38.30.webp","Fotos X hats/31/16_c33e215d-f6ab-49fb-aa91-0321164d5194.webp","Fotos X hats/31/CapsSinRecorte-20-2.webp"] },
-    { id:4, name:"Barbas CT Racing", brand:"Barbas", price:1999, images:["Fotos X hats/Barbas/1182847603.avif","Fotos X hats/Barbas/MOD05_2_f2bcc806-955a-43de-bf71-7a8ca2668fd0.webp","Fotos X hats/Barbas/D_NQ_NP_994022-MLM89415451332_082025-O.webp"] },
-    { id:5, name:"31 Hats LA Clouds", brand:"31 Hats", price:1599, images:["Fotos X hats/31/D_NQ_NP_790161-MLM76773975917_062024-O-gorra-31-hats-clouds-100-original-natanael-fotos-reales.webp","Fotos X hats/31/E3B634DA-F8EA-4C3A-838C-0EB2080B6E4D.webp"] },
+    { id:1, name:"Dandy Lost Hills", brand:"Dandy", price:2599, images:["Lost_Dandy-1633808640.jpeg","DSC06449.webp"] },
+    { id:2, name:"Dandy project 001", brand:"Dandy", price:2599, images:["6837A50F-7B77-474F-8F33-F5EFFEAFD274.webp","Dandy-Project-001-What-Would-Dandy-Do-4.webp","Dandy-Project-001-What-Would-Dandy-Do-3.webp"] },
+    { id:3, name:"31 Hats Aniversario", brand:"31 Hats", price:1599, images:["CapturadePantalla2025-01-24ala_s_12.38.30.webp","31/16_c33e215d-f6ab-49fb-aa91-0321164d5194.webp","Fotos X hats/31/CapsSinRecorte-20-2.webp"] },
+    { id:4, name:"Barbas CT Racing", brand:"Barbas", price:1999, images:["1182847603.avif","MOD05_2_f2bcc806-955a-43de-bf71-7a8ca2668fd0.webp","D_NQ_NP_994022-MLM89415451332_082025-O.webp"] },
+    { id:5, name:"31 Hats LA Clouds", brand:"31 Hats", price:1599, images:["D_NQ_NP_790161-MLM76773975917_062024-O-gorra-31-hats-clouds-100-original-natanael-fotos-reales.webp","Fotos X hats/31/E3B634DA-F8EA-4C3A-838C-0EB2080B6E4D.webp"] },
     { id:6, name:"31 Hats NY Crystals", brand:"31 Hats", price:1599, images: ["Fotos X hats/31/IMG_20241121_154345.webp","Fotos X hats/31/D_NQ_NP_976767-MLM83942828148_042025-O.webp"] },
     { id:7, name:"31 Hats Mago Amarilla", brand:"31 Hats", price:1599, images: ["Fotos X hats/31/WhatsAppImage2025-04-28at8.53.16PM_1.webp","Fotos X hats/31/Imagen21.webp","Fotos X hats/31/Imagen22.webp"] },
     { id:8, name:"31 Hats NY Flames", brand:"31 Hats", price:1599, images: ["Fotos X hats/31/Capturadepantalla2025-02-08170602.webp","Fotos X hats/31/DSC01005_800x_0603f42c-2b0c-417d-9066-42eac0118a3e.webp"] },
@@ -133,17 +133,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const brands = [
     { name:"Todos", img:"logoxhats.png" },
-    { name:"31 Hats", img:"31/Logo_31_Hats-3518271976.png" },
-    { name:"Dandy", img:"Fotos X hats/Dandy/DH-3178115606.jpeg" },
-    { name:"Barbas", img:"Fotos X hats/Barbas/1_900x_efe5dda5-f65d-40ce-8eec-5a900a601052.webp" },
-    { name:"JC Hats", img:"Fotos X hats/JC/LOGO_JC_frase_Mesa_de_trabajo_1_3cd2c16a-7f0e-473d-b261-08e54b0692d8.webp" },
-    { name:"New Era", img:"Fotos X hats/New Era/images.png" },
-    { name:"Cash Only", img:"Fotos X hats/Cash Only/cash-only-logo.webp" },
-    { name:"Big Boss", img:"Fotos X hats/Big Boss/images.jpeg" },
-    { name:"Dakaps", img:"Fotos X hats/Dakaps/images.png" },
-    { name:"Fino", img:"Fotos X hats/Fino/Gallo_fino_logo.webp" },
-    { name:"47", img:"Fotos X hats/47/'47_logo.svg.png" },
-    { name:"Ranch & Corral", img:"Fotos X hats/Ranch Corral/slide-1741202068561-3273877198-c2f47931700846223c365053ea1cc5ea1741202070.png" },
+    { name:"31 Hats", img:"Logo_31_Hats-3518271976.png" },
+    { name:"Dandy", img:"DH-3178115606.jpeg" },
+    { name:"Barbas", img:"1_900x_efe5dda5-f65d-40ce-8eec-5a900a601052.webp" },
+    { name:"JC Hats", img:"LOGO_JC_frase_Mesa_de_trabajo_1_3cd2c16a-7f0e-473d-b261-08e54b0692d8.webp" },
+    { name:"New Era", img:"images.png" },
+    { name:"Cash Only", img:"cash-only-logo.webp" },
+    { name:"Big Boss", img:"images.jpeg" },
+    { name:"Dakaps", img:"images.png" },
+    { name:"Fino", img:"Gallo_fino_logo.webp" },
+    { name:"47", img:"F'47_logo.svg.png" },
+    { name:"Ranch & Corral", img:"slide-1741202068561-3273877198-c2f47931700846223c365053ea1cc5ea1741202070.png" },
     { name:"Marca", img:"Logo" }
   ];
 
